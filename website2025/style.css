@@ -29,6 +29,8 @@ nav{
 }
 .logo{
     width: 140px;
+    height: 100;
+    border-radius: 5px;
 }
 
 nav ul li{
