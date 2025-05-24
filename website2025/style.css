@@ -50,7 +50,7 @@ nav ul li a::after{ /*line under menu items*/
     content: '';
     width: 0;
     height: 3px;
-    background:#0084ff ;
+    background:aquamarine ;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -70,7 +70,15 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text span{
-    color: #0084ff;
+    color: aquamarine;
+}
+.emCutout {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    height: 80vh;
+    z-index: 2;
+    pointer-events: none;
 }
 /* ---------------about----------------------*/
 .about-col-1 img {
