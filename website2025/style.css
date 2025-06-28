@@ -22,15 +22,22 @@ body{
 .container{
     padding: 10px 10%;
 }
-nav{
-    width: 100%;
+nav {
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px 40px;
     background-color: #192f527e;
+    border-radius: 40px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
-nav .container{
+
+nav .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 10%;
+    flex-wrap: wrap; /* optional for responsiveness */
+    padding: 0; /* prevent extra padding inside nav */
 }
 .logo{
     width: 60px;
@@ -75,18 +82,18 @@ nav ul li a:hover::after{
     color:#192f52 ;
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 80px;
     margin-top: 20px;
 }
 .header-text span{
     color: aquamarine;
-    font-family: 'Sour gummy', sans-serif;
+
 }
 .emCutout {
     position: absolute;
-    right: 5%;
+    right: 10%;
     bottom: 0;
-    height: 80vh;
+    height: 90vh;
     z-index: 2;
     pointer-events: none;
 }
