@@ -41,8 +41,10 @@ nav .container {
 }
 .logo{
     width: 60px;
-    height: 40;
-    border-radius: 5px;
+    height: 60px;
+    border-radius: 50%;       /* Makes it a circle */
+    object-fit: cover;        /* Ensures the image fills the circle evenly */
+    border: 2px solid aquamarine; /* Optional: a nice ring */
 }
 
 nav ul li{
@@ -169,6 +171,84 @@ p {
 }
 .tab-contents.active-tab{
     display: block;
+}
+
+/*--------------Work------------------------*/
+.timeline {
+    position: relative;
+    margin-top: 50px;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20%;
+    width: 3px;
+    background-color: aquamarine;
+    z-index: 1;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.timeline-logo {
+    width: 20%;
+    text-align: left;
+    padding-right: 20px;
+    z-index: 2;
+}
+
+.timeline-logo img.logo {
+    width: 80px;
+    height: 80px;           /* Ensure it's a square */
+    border-radius: 50%;     /* Perfect circle */
+    object-fit: cover;      /* Fills the circle without stretching */
+    
+}
+
+.timeline-line {
+    position: absolute;
+    left: 16%;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    background-color: aquamarine;
+    border: 3px solid #192f52;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.timeline-content {
+    width: 95%;              
+    margin-left: 10px;
+    z-index: 2;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    color: aquamarine;
+    font-size: 22px;
+}
+
+.timeline-content span {
+    font-weight: bold;
+    display: block;
+    margin: 5px 0 10px;
+    color: #fff;
+}
+
+.timeline-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ddd;
 }
 
 
